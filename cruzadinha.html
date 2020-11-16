@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="pai">
+        <div class="selectzinho">
+            <select name="" id="dicas" onchange="mostrar()">
+                <option value="" selected>- Escolha uma dica -</option>
+                <option value="dica1">dica 1</option>
+                <option value="dica2">dica 2</option>
+                <option value="dica3">dica 3</option>
+                <option value="dica1">dica 4</option>
+                <option value="dica2">dica 5</option>
+                <option value="dica3">dica 6</option>
+                <option value="dica1">dica 7</option>
+                <option value="dica2">dica 8</option>
+                <option value="dica3">dica 9</option>
+                <option value="dica1">dica 10</option>
+                <option value="dica2">dica 11</option>
+                <option value="dica3">dica 12</option>
+                <option value="dica1">dica 13</option>
+                <option value="dica2">dica 14</option>
+                <option value="dica3">dica 15</option>
+            </select>
+            <br>
+            <div id="div_mens"></div>
+        </div>
+
+        <div class="mae">
+
+            <div class="filho">
+                <div class="letra-a">
+                    <div class="aa"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ab"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ac"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ad"><input id="input-cinza" type='text' maxlength="0" readonly value="8"></div>
+                    <div class="ae"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="af"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ag"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ah"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ai"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="aj"><input id="input-cinza" type='text' maxlength="0" readonly value="10"></div>
+                    <div class="ak"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="al"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="am"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="an"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ao"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-b">
+                    <div class="ba"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="bb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="bc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="bd"><input id="letrabd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="be"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="bf"><input id="input-cinza" type='text' maxlength="0" readonly value="12"></div>
+                    <div class="bg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="bh"><input id="input-cinza" type='text' maxlength="0" readonly value="9"></div>
+                    <div class="bi"><input id="letrabi" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="bj"><input id="letrabj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="bk"><input id="letrabk" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="bl"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="bm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="bn"><input id="input-cinza" type='text' maxlength="0" readonly value="6"></div>
+                    <div class="bo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-c">
+                    <div class="ca"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="cb"><input id="input-cinza" type='text' maxlength="0" readonly value="3"></div>
+                    <div class="cc"><input id="letracc" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="cd"><input id="letracd" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="ce"><input id="letrace" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="cf"><input id="letracf" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="cg"><input id="letracg" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="ch"><input id="letrach" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="ci"><input id="letraci" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="cj"><input id="letracj" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="ck"><input id="letrack" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="cl"><input id="letracl" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="cm"><input id="letracm" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="cn"><input id="letracn" onkeyup="registradores()" maxlength="1" type='text'></div>
+                    <div class="co"><input id="letraco" onkeyup="registradores()" maxlength="1" type='text'></div>
+                </div>
+                <div class="letra-d">
+                    <div class="da"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="db"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="dc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="dd"><input id="letradd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="de"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="df"><input id="letradf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="dg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="dh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="di"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="dj"><input id="letradj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="dk"><input id="letradk" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="dl"><input id="input-cinza" type='text' maxlength="0" readonly value="1"></div>
+                    <div class="dm"><input id="letradm" onkeyup="cpu()" maxlength="1" type='text'></div>
+                    <div class="dn"><input id="letradn" onkeyup="cpu()" maxlength="1" type='text'></div>
+                    <div class="do"><input id="letrado" onkeyup="cpu()" maxlength="1" type='text'></div>
+                </div>
+                <div class="letra-e">
+                    <div class="ea"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="eb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ec"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ed"><input id="letraed" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ee"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ef"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="eg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="eh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ei"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ej"><input id="input-cinza" type='text' maxlength="0" readonly value="15"></div>
+                    <div class="ek"><input id="letraek" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="el"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="em"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="en"><input id="letraen" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="eo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-f">
+                    <div class="fa"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="fb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="fc"><input id="input-cinza" type='text' maxlength="0" readonly value="4"></div>
+                    <div class="fd"><input id="letrafd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="fe"><input id="letrafe" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ff"><input id="letraff" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="fg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="fh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="fi"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="fj"><input id="letrafj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="fk"><input id="letrafk" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="fl"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="fm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="fn"><input id="letrafn" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="fo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-g">
+                    <div class="ga"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gc"><input id="input-cinza" type='text' maxlength="0" readonly value="13"></div>
+                    <div class="gd"><input id="letragd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ge"><input id="letrage" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="gf"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gi"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gj"><input id="letragj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="gk"><input id="letragk" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="gl"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="gn"><input id="letragn" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="go"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-h">
+                    <div class="ha"><input id="input-cinza" type='text' maxlength="0" readonly value="7"></div>
+                    <div class="hb"><input id="letrahb" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="hc"><input id="letrahc" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="hd"><input id="letrahd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="he"><input id="letrahe" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="hf"><input id="letrahf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="hg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="hh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="hi"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="hj"><input id="letrahj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="hk"><input id="letrahk" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="hl"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="hm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="hn"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ho"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-i">
+                    <div class="ia"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ib"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ic"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="id"><input id="letraid" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ie"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="if"><input id="input-cinza" type='text' maxlength="0" readonly value="11"></div>
+                    <div class="ig"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ih"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ii"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ij"><input id="letraij" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ik"><input id="letraik" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="il"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="im"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="in"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="io"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-j">
+                    <div class="ja"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="jb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="jc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="jd"><input id="letrajd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="je"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="jf"><input id="letrajf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="jg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="jh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ji"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="jj"><input id="letrajj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="jk"><input id="letrajk" onkeyup="ula()" maxlength="1" type='text'></div>
+                    <div class="jl"><input id="letrajl" onkeyup="ula()" maxlength="1" type='text'></div>
+                    <div class="jm"><input id="letrajm" onkeyup="ula()" maxlength="1" type='text'></div>
+                    <div class="jn"><input id="input-cinza" type='text' maxlength="0" readonly value="2"></div>
+                    <div class="jo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-k">
+                    <div class="ka"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="kb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="kc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="kd"><input id="letrakd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ke"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="kf"><input id="letrakf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="kg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="kh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ki"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="kj"><input id="letrajk" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="kk"><input id="letrajk" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="kl"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="km"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="kn"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ko"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-l">
+                    <div class="la"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="lb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="lc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ld"><input id="letrald" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="le"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="lf"><input id="letralf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="lg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="lh"><input id="input-cinza" type='text' maxlength="0" readonly value="5"></div>
+                    <div class="li"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="lj"><input id="letralj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="lk"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ll"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="lm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ln"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="lo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-m">
+                    <div class="ma"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="md"><input id="letramd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="me"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mf"><input id="letramf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="mg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mh"><input id="letramh" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="mi"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mj"><input id="letramj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="mk"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ml"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mn"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="mo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-n">
+                    <div class="na"><input id="input-cinza" type='text' maxlength="0" readonly value='14'></div>
+                    <div class="nb"><input id="letranb" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="nc"><input id="letranc" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="nd"><input id="letrand" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ne"><input id="letrane" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="nf"><input id="letranf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ng"><input id="letrang" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="nh"><input id="letranh" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="ni"><input id="letrani" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="nj"><input id="letranj" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="nk"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="nl"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="nm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="nn"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="no"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-o">
+                    <div class="oa"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ob"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="oc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="od"><input id="letraod" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="oe"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="of"><input id="letraof" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="og"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="oh"><input id="letraoh" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="oi"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="oj"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ok"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ol"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="om"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="on"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="oo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-p">
+                    <div class="pa"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pd"><input id="letrapd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="pe"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pf"><input id="letrapf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="pg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ph"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pi"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pj"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pk"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pl"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="pn"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="po"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+                <div class="letra-q">
+                    <div class="qa"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qb"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qc"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qd"><input id="letraqd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="qe"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qf"><input id="letraqf" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="qg"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qh"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qi"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qj"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qk"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="ql"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qm"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qn"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                    <div class="qo"><input id="input-preto" maxlength="0" readonly type='text'></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function mostrar() {
+        if (dicas.value == 'dica1') {
+            div_mens.innerHTML = "<br>é a parte que realiza as instruções de um programa de computador para executar a aritmética básica lógica e a entrada e saída de dados. Isto é, realiza operações lógicas, cálculos e processamento de dados."
+        }
+    }
+
+    function cpu() {
+        if (letradm.value == 'c' && letradn.value == 'p' && letrado.value == 'u') {
+            letradm.style = `background-color: green`;
+            letradn.style = `background-color: green`;
+            letrado.style = `background-color: green`;
+        } else {
+            letrado.style = `background-color: red`;
+            letradm.style = `background-color: red`;
+            letradn.style = `background-color: red`;
+        }
+    }
+
+
+</script>
