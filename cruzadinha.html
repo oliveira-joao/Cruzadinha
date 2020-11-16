@@ -277,7 +277,7 @@
                     <div class="oa"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="ob"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="oc"><input id="input-preto" maxlength="0" readonly type='text'></div>
-                    <div class="od"><input id="letraod" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="od"><input id="letraod" maxlength="0" readonly type='text' value="S"></div>
                     <div class="oe"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="of"><input id="letraof" onkeyup="verificar()" maxlength="1" type='text'></div>
                     <div class="og"><input id="input-preto" maxlength="0" readonly type='text'></div>
@@ -294,7 +294,7 @@
                     <div class="pa"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="pb"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="pc"><input id="input-preto" maxlength="0" readonly type='text'></div>
-                    <div class="pd"><input id="letrapd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="pd"><input id="letrapd" maxlength="0" readonly type='text' value="S"></div>
                     <div class="pe"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="pf"><input id="letrapf" onkeyup="verificar()" maxlength="1" type='text'></div>
                     <div class="pg"><input id="input-preto" maxlength="0" readonly type='text'></div>
@@ -311,7 +311,7 @@
                     <div class="qa"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="qb"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="qc"><input id="input-preto" maxlength="0" readonly type='text'></div>
-                    <div class="qd"><input id="letraqd" onkeyup="verificar()" maxlength="1" type='text'></div>
+                    <div class="qd"><input id="letraqd" maxlength="0" readonly type='text' value="A"></div>
                     <div class="qe"><input id="input-preto" maxlength="0" readonly type='text'></div>
                     <div class="qf"><input id="letraqf" onkeyup="verificar()" maxlength="1" type='text'></div>
                     <div class="qg"><input id="input-preto" maxlength="0" readonly type='text'></div>
@@ -336,7 +336,7 @@
 
     function mostrar() {
         if (dicas.value == 'dica1') {
-            div_mens.innerHTML = "<br>é a parte que realiza as instruções de um programa de computador para executar a aritmética básica lógica e a entrada e saída de dados. Isto é, realiza operações lógicas, cálculos e processamento de dados."
+            div_mens.innerHTML = "é a parte que realiza as instruções de um programa de computador para executar a aritmética básica lógica e a entrada e saída de dados. Isto é, realiza operações lógicas, cálculos e processamento de dados."
         } else if (dicas.value == 'dica2') {
             div_mens.innerHTML= "é uma unidade que é responsável pela execução de somas, subtrações, funções booleanas, comparações, etc... Também é responsável pela divisão que é feita a partir de várias subtrações assim como a multiplicação é feita através de adições."
         } else if (dicas.value == 'dica4') {
@@ -420,20 +420,23 @@
     }
 
     function i5() {
-        if (letradf.value == '5') {
+        if (letracf.value == 'I' && letradf.value == '5') {
+            letracf.style = `background-color: green`;
             letradf.style = `background-color: green`;
-        } else if (letradf.value == ''){
+        } else if (letracf.value == 'I' || letradf.value == ''){
+            letracf.style = `background-color: white`;
             letradf.style = `background-color: white`;
         } else {
+            letracf.style = `background-color: red`;
             letradf.style = `background-color: red`;
         }
     }
 
     function i7() {
-        if (letragd.value == 'i' && letrage.value == '7') {
+        if (letragd.value == 'I' && letrage.value == '7') {
             letragd.style = `background-color: green`;
             letrage.style = `background-color: green`;
-        } else if (letragd.value == '' || letrage.value == ''){
+        } else if (letragd.value == 'I' || letrage.value == ''){
             letragd.style = `background-color: white`;
             letrage.style = `background-color: white`;
         } else {
@@ -443,7 +446,16 @@
     }
 
     function ram() {
-        
+        if (letrafe.value == 'i' && letraff.value == '7') {
+            letrafe.style = `background-color: green`;
+            letraff.style = `background-color: green`;
+        } else if (letrafe.value == '' || letraff.value == ''){
+            letrafe.style = `background-color: white`;
+            letraff.style = `background-color: white`;
+        } else {
+            letrafe.style = `background-color: red`;
+            letraff.style = `background-color: red`;
+        }
     }
 
     function rom() {
